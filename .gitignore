@@ -3,3 +3,6 @@
 ################################################################################
 
 /Source/.vs/Dare
+/Source/.vs/config
+/Source/Dare.AdminApi/bin/Debug
+/Source/Dare.AdminApi/obj
