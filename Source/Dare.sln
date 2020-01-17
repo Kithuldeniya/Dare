@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2048
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dare.AdminApi", "Dare.AdminApi\Dare.AdminApi.csproj", "{DD08A8FD-BA6D-44FB-9C48-BAC59D608303}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dare.AdminApi", "Dare.AdminApi\Dare.AdminApi.csproj", "{D292468C-E992-4AC2-9504-320591468FB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DD08A8FD-BA6D-44FB-9C48-BAC59D608303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD08A8FD-BA6D-44FB-9C48-BAC59D608303}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD08A8FD-BA6D-44FB-9C48-BAC59D608303}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD08A8FD-BA6D-44FB-9C48-BAC59D608303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D292468C-E992-4AC2-9504-320591468FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D292468C-E992-4AC2-9504-320591468FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D292468C-E992-4AC2-9504-320591468FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D292468C-E992-4AC2-9504-320591468FB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

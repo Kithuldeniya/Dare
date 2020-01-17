@@ -1,21 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
+using Serilog;
+using Serilog.Context;
+using Serilog.Events;
+using System;
+using System.IO;
 
-namespace Dare.AdminApi {
-    public class Program {
-        public static void Main(string[] args) {
-            CreateWebHostBuilder(args).Build().Run();
+namespace Dare.AdminApi
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            ConfigLogging();
+
+            Log.Information("No contextual properties");
+
+            try
+            {
+                Log.Information("Getting the motors running...");
+
+                CreateHostBuilder(args).Build().Run();
+                return;
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "Host terminated unexpectedly");
+                return;
+            }
+            finally
+            {
+                Log.Information("Getting the motors finally...");
+                Log.CloseAndFlush();
+            }
+
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            })
+            .UseSerilog();
+
+
+        private static void ConfigLogging()
+        {
+            //var configFilePath = $".{Path.DirectorySeparatorChar}appsettings.json";
+
+            var configuration = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json")
+            .Build();
+
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(configuration)
+                .CreateLogger();
+          
+        }
     }
 }
