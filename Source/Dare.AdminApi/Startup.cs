@@ -37,11 +37,14 @@ namespace Dare.AdminApi
                 app.UseDeveloperExceptionPage();
             }
 
+
             app.UseHttpsRedirection();
 
             app.UseSerilogRequestLogging();
 
             app.UseRouting();
+
+            app.UseWrapperAndExeceptionHandler();
 
             app.UseAuthorization();
 

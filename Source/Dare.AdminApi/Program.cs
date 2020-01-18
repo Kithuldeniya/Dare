@@ -50,9 +50,12 @@ namespace Dare.AdminApi
         private static void ConfigLogging()
         {
             //var configFilePath = $".{Path.DirectorySeparatorChar}appsettings.json";
-
+            var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            
             var configuration = new ConfigurationBuilder()
-            .AddJsonFile("appsettings.json")
+            .AddJsonFile("appsettings.json", false, true)
+            .AddJsonFile($"appsettings.{environment}.json", true, true)
+            .AddEnvironmentVariables()
             .Build();
 
             Log.Logger = new LoggerConfiguration()
