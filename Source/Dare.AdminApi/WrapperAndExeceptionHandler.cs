@@ -25,6 +25,8 @@ namespace Dare.AdminApi
 
         public async Task Invoke(HttpContext httpContext, ILogger<WrapperAndExeceptionHandler> logger)
         {
+            //await _next(httpContext);
+
             Stream originalBody = httpContext.Response.Body;
             using var memStream = new MemoryStream();
             httpContext.Response.Body = memStream;
@@ -43,10 +45,7 @@ namespace Dare.AdminApi
             {
                 hasError = true;
                 logger.LogError(ex, "Dare exection");
-                responseBody = JsonConvert.SerializeObject(new
-                {
-                    ex.Message
-                }); ;
+                responseBody = ex.Message;
             }
 
             string wrappedResponse = Wrap(responseBody, hasError);
@@ -60,7 +59,17 @@ namespace Dare.AdminApi
 
         private String Wrap(string originalBody, bool hasError)
         {
-            dynamic response = JsonConvert.DeserializeObject<dynamic>(originalBody);
+            dynamic response;
+            try
+            {
+                response = JsonConvert.DeserializeObject<dynamic>(originalBody);
+            }
+            catch (Exception)
+            {
+
+                response = originalBody;
+            }
+
 
             var wrapper = new
             {

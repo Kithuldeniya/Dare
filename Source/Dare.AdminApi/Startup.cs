@@ -10,7 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Dare.Model;
 using Serilog;
+using Dare.Model.DBContext;
 
 namespace Dare.AdminApi
 {
@@ -26,7 +28,9 @@ namespace Dare.AdminApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDareDbContext(Configuration["ConnectionString:DareDB"]);
             services.AddControllers();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
