@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dare.Repository", "Dare.Rep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dare.IRepository", "Dare.IRepository\Dare.IRepository.csproj", "{35F29EF8-3982-4C5B-B642-13FB94ED558A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dare.Model", "Dare.Model\Dare.Model.csproj", "{906CC721-260F-411D-B6CB-A48F3A29B320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dare.Model", "Dare.Model\Dare.Model.csproj", "{906CC721-260F-411D-B6CB-A48F3A29B320}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dare.IModel", "Dare.IModel\Dare.IModel.csproj", "{EDEA604E-79BE-4D34-A608-FB0241C488F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dare.IModel", "Dare.IModel\Dare.IModel.csproj", "{EDEA604E-79BE-4D34-A608-FB0241C488F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dare.Maintenance", "Dare.Maintenance\Dare.Maintenance.csproj", "{BCFD6759-E70A-4345-B440-45299594D79C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Dare.Database", "Dare.Database\Dare.Database.sqlproj", "{CEF39078-D52B-403F-84BA-980D5B0696DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,16 @@ Global
 		{EDEA604E-79BE-4D34-A608-FB0241C488F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDEA604E-79BE-4D34-A608-FB0241C488F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDEA604E-79BE-4D34-A608-FB0241C488F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFD6759-E70A-4345-B440-45299594D79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFD6759-E70A-4345-B440-45299594D79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFD6759-E70A-4345-B440-45299594D79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFD6759-E70A-4345-B440-45299594D79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

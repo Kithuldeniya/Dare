@@ -1,0 +1,86 @@
+25-Oct-20 10:19:48 AM	This log contains information about the import schema operation into project 'Dare.Database' on computer 'RAJITHA-LAPTOP' by user 'Rajitha'.
+25-Oct-20 10:19:48 AM	Import of database schema has started.
+25-Oct-20 10:20:02 AM	Gathering database credentials
+25-Oct-20 10:20:02 AM	Gathering database options
+25-Oct-20 10:20:02 AM	Gathering generic database scoped configuration option
+25-Oct-20 10:20:02 AM	Gathering users
+25-Oct-20 10:20:02 AM	Gathering roles
+25-Oct-20 10:20:02 AM	Gathering application roles
+25-Oct-20 10:20:02 AM	Gathering role memberships
+25-Oct-20 10:20:02 AM	Gathering filegroups
+25-Oct-20 10:20:02 AM	Gathering full-text catalogs
+25-Oct-20 10:20:02 AM	Gathering assemblies
+25-Oct-20 10:20:02 AM	Gathering certificates
+25-Oct-20 10:20:02 AM	Gathering asymmetric keys
+25-Oct-20 10:20:02 AM	Gathering symmetric keys
+25-Oct-20 10:20:02 AM	Gathering encrypted symmetric keys
+25-Oct-20 10:20:02 AM	Gathering schemas
+25-Oct-20 10:20:02 AM	Gathering XML schema collections
+25-Oct-20 10:20:02 AM	Gathering user-defined data types
+25-Oct-20 10:20:02 AM	Gathering user-defined types
+25-Oct-20 10:20:02 AM	Gathering table types
+25-Oct-20 10:20:02 AM	Gathering unique keys for table types
+25-Oct-20 10:20:02 AM	Gathering primary keys for table types
+25-Oct-20 10:20:02 AM	Gathering indexes for table types
+25-Oct-20 10:20:02 AM	Gathering check constraints for table types
+25-Oct-20 10:20:02 AM	Gathering default constraints for table types
+25-Oct-20 10:20:02 AM	Gathering partition functions
+25-Oct-20 10:20:02 AM	Gathering partition schemes
+25-Oct-20 10:20:02 AM	Gathering functions
+25-Oct-20 10:20:02 AM	Gathering encrypted functions
+25-Oct-20 10:20:02 AM	Gathering aggregates
+25-Oct-20 10:20:02 AM	Gathering procedures
+25-Oct-20 10:20:02 AM	Gathering encrypted procedures
+25-Oct-20 10:20:02 AM	Gathering tables
+25-Oct-20 10:20:02 AM	Gathering primary keys
+25-Oct-20 10:20:02 AM	Gathering unique constraints
+25-Oct-20 10:20:02 AM	Gathering foreign keys
+25-Oct-20 10:20:02 AM	Gathering default constraints
+25-Oct-20 10:20:02 AM	Gathering check constraints
+25-Oct-20 10:20:02 AM	Gathering views
+25-Oct-20 10:20:02 AM	Gathering encrypted views
+25-Oct-20 10:20:02 AM	Gathering indexes
+25-Oct-20 10:20:02 AM	Gathering statistics
+25-Oct-20 10:20:02 AM	Gathering full-text index stoplists
+25-Oct-20 10:20:02 AM	Gathering search property lists
+25-Oct-20 10:20:02 AM	Gathering search properties
+25-Oct-20 10:20:02 AM	Gathering full-text indexes
+25-Oct-20 10:20:02 AM	Gathering column store indexes
+25-Oct-20 10:20:02 AM	Gathering spatial indexes
+25-Oct-20 10:20:02 AM	Gathering XML indexes
+25-Oct-20 10:20:02 AM	Gathering Selective XML indexes
+25-Oct-20 10:20:02 AM	Gathering encrypted triggers
+25-Oct-20 10:20:02 AM	Gathering triggers
+25-Oct-20 10:20:02 AM	Gathering encrypted and clr ddl triggers
+25-Oct-20 10:20:02 AM	Gathering ddl triggers
+25-Oct-20 10:20:02 AM	Creating edge constraints
+25-Oct-20 10:20:02 AM	Gathering synonyms
+25-Oct-20 10:20:02 AM	Gathering defaults
+25-Oct-20 10:20:02 AM	Gathering data constraint uddt bindings
+25-Oct-20 10:20:02 AM	Gathering rules
+25-Oct-20 10:20:02 AM	Gathering data constraint uddt bindings
+25-Oct-20 10:20:02 AM	Gathering message types
+25-Oct-20 10:20:02 AM	Gathering queues
+25-Oct-20 10:20:02 AM	Gathering contracts
+25-Oct-20 10:20:02 AM	Gathering services
+25-Oct-20 10:20:02 AM	Gathering event notifications
+25-Oct-20 10:20:02 AM	Gathering remote service bindings
+25-Oct-20 10:20:02 AM	Gathering broker priorities
+25-Oct-20 10:20:02 AM	Gathering signatures
+25-Oct-20 10:20:02 AM	Gathering data compression options
+25-Oct-20 10:20:02 AM	Gathering sequence types
+25-Oct-20 10:20:02 AM	Gathering security policies
+25-Oct-20 10:20:02 AM	Gather column encryption keys
+25-Oct-20 10:20:02 AM	Gathering column master keys
+25-Oct-20 10:20:02 AM	Gathering external data sources
+25-Oct-20 10:20:02 AM	Gathering external file formats
+25-Oct-20 10:20:02 AM	Gathering external tables
+25-Oct-20 10:20:02 AM	Gathering extended properties
+25-Oct-20 10:20:02 AM	Gathering credentials
+25-Oct-20 10:20:02 AM	Gathering logins
+25-Oct-20 10:20:02 AM	Gathering server audits
+25-Oct-20 10:20:02 AM	Scanning project for duplicate elements
+25-Oct-20 10:20:02 AM	Finished duplicate element processing
+25-Oct-20 10:20:03 AM	Finished importing database.
+25-Oct-20 10:20:03 AM	A summary of the import was saved to the following location: C:\Users\Rajitha\source\repos\Dare\Source\Dare.Database\Import Schema Logs\Dare.Database_20201025021948.log
+25-Oct-20 10:20:03 AM	Click Finish to continue...

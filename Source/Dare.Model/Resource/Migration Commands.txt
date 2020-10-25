@@ -1,0 +1,5 @@
+﻿add-migration -c DareDBContext -o Migrations\DareDB
+update-database -c DareDBContext 
+
+add-migration -c DareIdentityDBContext -o Migrations\DareIdentityDB
+update-database -c DareIdentityDBContext 

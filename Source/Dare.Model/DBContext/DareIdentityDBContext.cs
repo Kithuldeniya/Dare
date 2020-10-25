@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Dare.Model.Model;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Dare.Model.DBContext
 {
-    public class DareDBContext : DbContext
+    public class DareIdentityDBContext : IdentityDbContext
     {
         public IConfiguration _configuration { get; }
-        public DareDBContext(IConfiguration configuration)
+        public DareIdentityDBContext(IConfiguration configuration)
         {
             _configuration = configuration;
         }
@@ -25,9 +21,5 @@ namespace Dare.Model.DBContext
         {
             return _configuration["ConnectionString:DareDB"];
         }
-
-        public DbSet<Owner> Owners { get; set; }
     }
-
-
 }

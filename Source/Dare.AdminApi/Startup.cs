@@ -1,18 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Dare.Maintenance.Jwt;
+using Dare.Model.DBContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Dare.Model;
 using Serilog;
-using Dare.Model.DBContext;
 
 namespace Dare.AdminApi
 {
@@ -28,7 +22,19 @@ namespace Dare.AdminApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDareDbContext(Configuration["ConnectionString:DareDB"]);
+            // Add DbContext
+            services.AddDbContext<DareDBContext>();
+            services.AddDbContext<DareIdentityDBContext>();
+
+            // Add Identity
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<DareIdentityDBContext>()
+                .AddDefaultTokenProviders();
+
+            // Add Jwt Authentication
+            //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear(); // => remove default claims
+            services.AddJwt(Configuration);
+
             services.AddControllers();
 
         }
@@ -48,8 +54,9 @@ namespace Dare.AdminApi
 
             app.UseRouting();
 
-            app.UseWrapperAndExeceptionHandler();
+            //app.UseWrapperAndExeceptionHandler();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

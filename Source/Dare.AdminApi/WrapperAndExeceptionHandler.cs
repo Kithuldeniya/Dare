@@ -44,7 +44,7 @@ namespace Dare.AdminApi
             catch (Exception ex)
             {
                 hasError = true;
-                logger.LogError(ex, "Dare exection");
+                logger.LogError(ex, "Dare exepction");
                 responseBody = ex.Message;
             }
 
