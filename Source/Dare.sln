@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dare.AdminApi", "Dare.AdminApi\Dare.AdminApi.csproj", "{D292468C-E992-4AC2-9504-320591468FB3}"
 EndProject
@@ -14,8 +14,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dare.IModel", "Dare.IModel\Dare.IModel.csproj", "{EDEA604E-79BE-4D34-A608-FB0241C488F2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dare.Maintenance", "Dare.Maintenance\Dare.Maintenance.csproj", "{BCFD6759-E70A-4345-B440-45299594D79C}"
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Dare.Database", "Dare.Database\Dare.Database.sqlproj", "{CEF39078-D52B-403F-84BA-980D5B0696DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,12 +45,6 @@ Global
 		{BCFD6759-E70A-4345-B440-45299594D79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCFD6759-E70A-4345-B440-45299594D79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCFD6759-E70A-4345-B440-45299594D79C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEF39078-D52B-403F-84BA-980D5B0696DD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
