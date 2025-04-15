@@ -10,6 +10,9 @@ jobs:
   build:
     name: Build and analyze
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: ./Source
     steps:
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -44,7 +47,5 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Kithuldeniya_Dare" /o:"kithuldeniya" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          cd Source
           dotnet build
-          cd ..
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
